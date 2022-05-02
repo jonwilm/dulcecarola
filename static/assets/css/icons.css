@@ -1,0 +1,25 @@
+@font-face {
+  font-family:IconosAlegria;
+  src:url(../fonts/fontello.woff);
+  font-display:swap
+}
+.icon-search:before,
+.icon-user:before,
+.icon-cart:before,
+.icon-wishlist:before {
+  font-family: IconosAlegria;
+  font-weight: 300;
+  font-style: normal;
+}
+.icon-search:before {
+  content:'\e800' !important;
+}
+.icon-user:before {
+  content:'\e802' !important;
+}
+.icon-cart:before {
+  content:'\e804' !important;
+}
+.icon-wishlist:before {
+  content:'\e806' !important
+}

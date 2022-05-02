@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#DulceConVosMisma - Dulce Carola</title>
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+  <link type="image/x-icon" rel="icon" href="{% static 'assets/favicon/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/fonts/Konnect.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKGWE5H7JC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', '');
+  </script>
+  
+  <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+  
+  <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+  
+</head>
+<body>
+  <div class="preloader">
+    <div class="text-center">
+      <img src="{% static 'assets/images/loader.gif' %}" alt="loader">
+    </div>
+  </div>
+  
+  <div class="fixed-top">
+    <div class="prenavbar">
+      <span>ENVIO GRATIS A PARTIR DE $8000</span>
+      <span>3 & 6 CUOTAS SIN INTERÉS</span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="{% url 'home_app:home' %}">
+          <img class="logo-navbar" src="{% static 'assets/images/logo-gris.webp' %}" alt="Dulce Carola">
+        </a>
+        <ul class="navbar-nav navigation mx-auto d-none d-lg-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://www.dulcecarola.com/underwear"aria-expanded="false">
+              UNDERWEAR
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/underwear/corpinos">CORPIÑOS</a></li>
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/underwear/bombachas">BOMBACHAS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://www.dulcecarola.com/makeup" aria-expanded="false">
+              MAKEUP
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/makeup/labiales">LABIALES</a></li>
+              <ul>
+                <li><a class="" href="https://www.dulcecarola.com/makeup/labiales/brillo">BRILLO</a></li>
+                <li><a class="" href="https://www.dulcecarola.com/makeup/labiales/mate">MATE</a></li>
+              </ul>
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/makeup/esmaltes">ESMALTES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://www.dulcecarola.com/fragancias" aria-expanded="false">
+              FRAGANCIAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/fragancias/cremas">CREMAS</a></li>
+              <li><a class="dropdown-item" href="https://www.dulcecarola.com/fragancias/perfumes">PERFUMES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.dulcecarola.com/sale">SALE</a>
+          </li>
+        </ul>
+        <ul class="nav-icons">
+          <li class="position-relative">
+            <a id="link-nav-search" href="javascript:void(0)" title="Buscar"><i class="icon-search"></i></a>
+            <div id="nav-search" class="input-group mb-3" style="display: none;">
+              <input id="input-nav-search" type="text" class="form-control" placeholder="Buscar">
+              <button class="btn" type="button" id="button-nav-search"><i class="icon-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.dulcecarola.com/customer/account/" title="Mi Cuenta"><i class="icon-user"></i></a>
+          </li>
+          <li>
+            <a href="https://www.dulcecarola.com/checkout/cart/" title="Carrito"><i class="icon-cart"></i></a>
+          </li>
+          <li>
+            <a href="https://www.dulcecarola.com/wishlist/" title="Mis Refes"><i class="icon-wishlist"></i></a>
+          </li>
+          <button id="open-menu" class="navbar-toggler d-lg-none" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </ul>
+      </div>
+    </nav>
+    <div class="nav-mobile d-lg-none">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingOne">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="ps-3 w-100" href="https://www.dulcecarola.com/underwear">UNDERWEAR</a>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"></button>
+            </div>
+          </div>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <li>
+                <a href="https://www.dulcecarola.com/underwear/corpinos">CORPIÑOS</a>
+              </li>
+              <li>
+                <a href="https://www.dulcecarola.com/underwear/bombachas">BOMBACHAS</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingTwo">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="ps-3 w-100" href="https://www.dulcecarola.com/makeup">MAKEUP</a>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></button>
+            </div>
+          </div>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <li>
+                <a href="https://www.dulcecarola.com/makeup/labiales">LABIALES</a>
+              </li>
+              <ul>
+                <li>
+                  <a href="https://www.dulcecarola.com/makeup/labiales/brillo">BRILLO</a>
+                </li>
+                <li>
+                  <a href="https://www.dulcecarola.com/makeup/labiales/mate">MATE</a>
+                </li>
+              </ul>
+              <li>
+                <a href="https://www.dulcecarola.com/makeup/esmaltes">ESMALTES</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingThree">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="ps-3 w-100" href="https://www.dulcecarola.com/fragancias">FRAGANCIAS</a>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"></button>
+            </div>
+          </div>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <li>
+                <a href="https://www.dulcecarola.com/fragancias/cremas">CREMAS</a>
+              </li>
+              <li>
+                <a href="https://www.dulcecarola.com/fragancias/perfumes">PERFUMES</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingFour">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="ps-3 w-100" href="https://www.dulcecarola.com/sale">SALE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    
+    {% block content %}{% endblock content %}
+    
+  </main>
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="content-input mb-2">
+              {{ newsletter_form.email }}
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-custom btn-rounded btn-gray-white btn-center-out mt-3">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  
+</body>
+</html>
