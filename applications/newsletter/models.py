@@ -9,8 +9,8 @@ class Newsletter(models.Model):
 
     class Meta:
 
-        verbose_name = 'Newsletter'
-        verbose_name_plural = 'Newsletter'
+        verbose_name = 'Suscrito'
+        verbose_name_plural = 'Suscritos'
 
     def __str__(self):
         return self.email

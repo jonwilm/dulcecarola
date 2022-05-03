@@ -9,8 +9,8 @@ class NewsletterForm(forms.Form):
         required=True,
         widget=forms.EmailInput(
             attrs={
-                'class': 'form-control text-center',
-                'placeholder': 'Ingrese su email',
+                'class': 'form-control',
+                'placeholder': 'Email',
                 'autocomplete': 'off',
             }
         ))

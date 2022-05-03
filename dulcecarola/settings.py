@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'import_export',
     'applications.newsletter',
+    'applications.sorteo',
+    'applications.livececilia',
 ]
 
 MIDDLEWARE = [

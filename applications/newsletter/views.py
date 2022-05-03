@@ -1,15 +1,20 @@
 from django.urls import reverse_lazy
 from django.shortcuts import render
+from django.contrib.auth import authenticate, login, logout
 from django.views.generic import TemplateView
 from applications.newsletter.forms import NewsletterForm
 
 
-def newsletter(request):
-
-    if request.method == 'POST':
-        form = NewsletterForm(request.POST)
-        if form.is_valid():
-            form.save()
+# def newsletter(self, request):
+#     if request.method == 'POST':
+#         form = NewsletterForm(request.POST)
+#         if form.is_valid():
+#             user = authenticate(
+#                 username='root',
+#                 password='123'
+#             )
+#             login(self.request, user)
+#             form.save()
 
 
 class HomeView(TemplateView):
