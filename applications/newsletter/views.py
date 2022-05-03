@@ -11,7 +11,7 @@ from applications.newsletter.forms import NewsletterForm
 #         if form.is_valid():
 #             user = authenticate(
 #                 username='root',
-#                 password='123'
+#                 password='dulcecarola321-'
 #             )
 #             login(self.request, user)
 #             form.save()

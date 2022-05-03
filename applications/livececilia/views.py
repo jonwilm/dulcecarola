@@ -14,7 +14,7 @@ class LiveCeciliaView(FormView):
     def form_valid(self, form):
         user = authenticate(
             username='root',
-            password='123'
+            password='dulcecarola321-'
         )
         login(self.request, user)
         form.save()
