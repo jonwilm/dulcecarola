@@ -12,10 +12,10 @@ class LiveCeciliaView(FormView):
     success_url = reverse_lazy('livececilia_app:livececilia')
 
     def form_valid(self, form):
-        user = authenticate(
-            username='root',
-            password='dulcecarola321-'
-        )
-        login(self.request, user)
+        # user = authenticate(
+        #     username='root',
+        #     password='dulcecarola321-'
+        # )
+        # login(self.request, user)
         form.save()
         return super(LiveCeciliaView, self).form_valid(form)
