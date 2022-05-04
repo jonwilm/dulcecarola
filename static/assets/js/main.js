@@ -63,10 +63,6 @@ $(".dropdown").hover(function() {
 // ------------------------------------------------------------
 // BUSCADOR
 // ------------------------------------------------------------
-// function abrirNuevoTab(url) {
-//   var win = window.open(url, '_blank');
-//   win.focus();
-// }
 $('#link-nav-search').click(function() {
   $('#nav-search').css('display', 'flex')
 })
@@ -86,3 +82,20 @@ $('#button-nav-search').click(function() {
     alert('Ingresa lo que desea buscar')
   }
 })
+// ------------------------------------------------------------
+// MODALS VIDEOS
+// ------------------------------------------------------------
+let idVideo;
+let srcVideo;
+$(".btn-video-yt").click(function () {
+  idVideo = $(this).attr("id-video");
+  srcVideo = "https://www.youtube.com/embed/" + idVideo + "?rel=0;autoplay=1";
+});
+$("#video-player").on("hidden.bs.modal", function () {
+  $("#video-player iframe").attr("src", "");
+});
+$("#video-player").on("show.bs.modal", function () {
+  setTimeout(() => {
+    $("#video-player iframe").attr("src", srcVideo);
+  }, 100);
+});

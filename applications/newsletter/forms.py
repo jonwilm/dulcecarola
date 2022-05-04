@@ -14,11 +14,3 @@ class NewsletterForm(forms.Form):
                 'autocomplete': 'off',
             }
         ))
-
-
-    # def save(self, *args, **kwargs):
-    #     data = self.cleaned_data
-    #     Newsletter.objects.get_or_create(
-    #         email=data['email'],
-    #         defaults={}
-    #     )
