@@ -2,7 +2,6 @@ from crypt import methods
 from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login, logout
 from django.views.generic import TemplateView
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
