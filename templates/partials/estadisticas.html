@@ -1,0 +1,24 @@
+{% load static %}
+
+<div class="sec-estadisticas">
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 px-0">
+        <div class="sec-text h-100">
+          <a class="title" href="{% url 'home_app:estadisticas' %}">
+            <p>LA MASTURBACIÓN EN NÚMEROS</p>
+          </a>
+          <p class="text">Realizamos una encuesta con 400 mujeres sobre la masturbación femenina.</p>
+          <p class="text">¡Conocé lo que nos dijeron!</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 px-0">
+        <div class="sec-img">
+          <a href="{% url 'home_app:estadisticas' %}">
+            <img class="w-100" src="{% static 'assets/images/estadisticas/img-home.png' %}" alt="Estadisticas">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

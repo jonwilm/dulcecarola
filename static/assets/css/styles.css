@@ -274,6 +274,55 @@ main {
   font-weight: 300;
   line-height: 1;
 }
+.sec-text {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-text .title {
+  text-decoration: none;
+  color: #C80928;
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-align: center
+}
+.sec-text .title:hover {
+  text-decoration: underline;
+}
+.sec-text .text {
+  color: #494746;
+  font-size: 2.5vw;
+  margin: 0;
+  text-align: center
+}
+.sec-img {
+  overflow: hidden;
+}
+.sec-img img {
+  transition: all 0.3s;
+}
+.sec-img img:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .sec-text {
+    padding: 0 3rem;
+  }
+  .sec-text .title {
+    font-size: 1.2vw;
+  }
+  .sec-text .text {
+    font-size: 1.2vw;
+  }
+}
+.sec-estadisticas {
+  padding: 0.5rem 0;
+}
+.sec-estadisticas .content {
+  background-color: #e3e3e3;
+}
 /* -------------------------------------- */
 /* HOME */
 /* -------------------------------------- */

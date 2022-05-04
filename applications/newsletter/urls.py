@@ -10,4 +10,9 @@ urlpatterns = [
         views.HomeView.as_view(),
         name="home"
     ),
+    path(
+        'estadisticas',
+        views.EstadisticasView.as_view(),
+        name="estadisticas"
+    ),
 ]

@@ -20,3 +20,8 @@ from applications.newsletter.forms import NewsletterForm
 class HomeView(TemplateView):
 
     template_name = 'home.html'
+
+
+class EstadisticasView(TemplateView):
+
+    template_name = 'estadisticas.html'
