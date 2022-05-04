@@ -307,13 +307,13 @@ main {
   transform: scale(1.1);
 }
 .sec-estadisticas,
-.sec-campania {
+.sec-campania,
+.sec-sorteo {
   padding: 0.5rem 0;
 }
-.sec-estadisticas .content {
-  background-color: #e3e3e3;
-}
-.sec-campania .content {
+.sec-estadisticas .content,
+.sec-campania .content,
+.sec-sorteo .content {
   background-color: #e3e3e3;
 }
 .sec-campania .sec-text .text1 {
@@ -342,6 +342,40 @@ main {
   width: 10%;
   transition: all 0.3s;
 }
+.sec-sorteo .content-text {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  text-align: end;
+  pointer-events: none;
+}
+.sec-sorteo .content-text .text1 {
+  font-size: 12vw;
+  font-weight: 300;
+  color: #494746;
+  margin: 0;
+  line-height: 1;
+  text-align: end;
+}
+.sec-sorteo .content-text .text2 {
+  font-size: 6vw;
+  font-weight: 300;
+  color: #C80928;
+  margin: 0;
+  line-height: 1;
+  text-align: end;
+  margin-bottom: 0.3rem;
+}
+.sec-sorteo .content-text .text3 {
+  font-size: 3vw;
+  font-weight: 400;
+  color: #494746;
+  margin: 0;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #494746;
+}
 @media (min-width: 768px) {
   .sec-text {
     padding: 0 3rem;
@@ -360,6 +394,16 @@ main {
   }
   .sec-campania .sec-text .text2 {
     font-size: 2.15vw;
+  }
+  .sec-sorteo .content-text .text1 {
+    font-size: 6vw;
+  }
+  .sec-sorteo .content-text .text2 {
+    font-size: 3vw;
+    margin-bottom: 1rem;
+  }
+  .sec-sorteo .content-text .text3 {
+    font-size: 1.5vw;
   }
 }
 /* -------------------------------------- */

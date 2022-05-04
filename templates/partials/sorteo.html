@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="sec-sorteo">
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 px-0">
+        <div class="sec-text h-100">
+          <a class="title" href="{% url 'sorteo_app:sorteo' %}">
+            <p>SORTEO DE 10 KITS</p>
+          </a>
+          <p class="text">Participá y ganá uno de los 10 kits diseñados especialmente para vos.</p>
+          <p class="text">¡Es muy fácil!</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 px-0">
+        <div class="sec-img position-relative">
+          <a href="{% url 'sorteo_app:sorteo' %}">
+            <img class="w-100" src="{% static 'assets/images/sorteo/img-home.png' %}" alt="Sorteo">
+            <div class="content-text">
+              <span>
+                <p class="text1">SORTEO</p>
+                <p class="text2">KIT <strong>HOLA YO</strong></p>
+                <span class="text3">PARTICIPAR</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
