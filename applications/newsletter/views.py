@@ -29,3 +29,8 @@ class HomeView(TemplateView):
 class EstadisticasView(TemplateView):
 
     template_name = 'estadisticas.html'
+
+
+class TestimoniosView(TemplateView):
+
+    template_name = 'testimonios.html'

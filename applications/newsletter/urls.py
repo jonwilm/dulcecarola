@@ -11,13 +11,18 @@ urlpatterns = [
         name="home"
     ),
     path(
+        'save-newsletter',
+        views.newsletter,
+        name="save-newsletter"
+    ),
+    path(
         'estadisticas',
         views.EstadisticasView.as_view(),
         name="estadisticas"
     ),
     path(
-        'save-newsletter',
-        views.newsletter,
-        name="save-newsletter"
+        'testimonios',
+        views.TestimoniosView.as_view(),
+        name="testimonios"
     ),
 ]
