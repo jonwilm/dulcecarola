@@ -308,7 +308,10 @@ main {
 }
 .sec-estadisticas,
 .sec-campania,
-.sec-sorteo {
+.sec-testimonios,
+.sec-sorteo,
+.sec-cecilia,
+.sec-creemos {
   padding: 0.5rem 0;
 }
 .sec-estadisticas .content,
@@ -376,6 +379,16 @@ main {
   padding: 0.2rem 0.5rem;
   border: 1px solid #494746;
 }
+.sec-creemos .text1 {
+  font-size: 8vw;
+  font-weight: 400;
+  color: #494746;
+}
+.sec-creemos .text2 {
+  font-size: 4vw;
+  font-weight: 400;
+  color: #494746;
+}
 @media (min-width: 768px) {
   .sec-text {
     padding: 0 3rem;
@@ -404,6 +417,12 @@ main {
   }
   .sec-sorteo .content-text .text3 {
     font-size: 1.5vw;
+  }
+  .sec-creemos .text1 {
+    font-size: 3vw;
+  }
+  .sec-creemos .text2 {
+    font-size: 1.2vw;
   }
 }
 /* -------------------------------------- */
