@@ -197,7 +197,7 @@
             {% csrf_token %}
             <div class="input-group mb-3">
               {{ newsletter_form.email }}
-              <button class="btn" type="submit" disabled>ENVIAR</button>
+              <button id="newsletter" class="btn" type="submit">ENVIAR</button>
             </div>
           </form>
         </div>
@@ -251,6 +251,33 @@
   </footer>
   
   <script src="{% static 'assets/js/main.js' %}"></script>
-  
+  <script>
+  document.querySelector('#newsletter').addEventListener("click", newsletter);
+
+  function newsletter() {
+    // OBTENCION DEL CORREO
+    const newsletter = 'otrovagomas2@gmail.com'
+
+    // VALIDACIONES PERTINENTES
+    fetch("{% url 'home_app:save-newsletter' %}", {
+        method: 'POST',
+        body: JSON.stringify(
+          {
+            newsletter,
+          }
+        )
+      })
+    .then(response => response.json())
+    .then(data => {
+      // console.log(data.guardado)
+      if (data.guardado) {
+        alert('email nuevo guardado :)')
+      }else{
+        alert('email actualizado :)')
+      }
+      // mensaje y reiniciar form
+    });
+  }
+  </script>
 </body>
 </html>

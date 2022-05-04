@@ -10,4 +10,9 @@ urlpatterns = [
         views.HomeView.as_view(),
         name="home"
     ),
+    path(
+        'save-newsletter',
+        views.newsletter,
+        name="save-newsletter"
+    ),
 ]
