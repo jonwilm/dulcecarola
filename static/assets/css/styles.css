@@ -256,6 +256,24 @@ main {
 .hero {
   position: relative;
 }
+.hero .text-hero {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #C80928;
+  font-size: 3.8vw;
+}
+.hero .title-page {
+  position: absolute;
+  top: 100%;
+  left: 2%;
+  transform: translateY(-110%);
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 1;
+}
 /* -------------------------------------- */
 /* HOME */
 /* -------------------------------------- */
