@@ -193,13 +193,10 @@
         <div class="newsletter col-12 col-lg-4">
           <h4>SUSCRIBITE AL NEWSLETTER</h4>
           <p>¡Suscribite y entérate de las promociones exclusivas!</p>
-          <form action="" method="POST">
-            {% csrf_token %}
             <div class="input-group mb-3">
               {{ newsletter_form.email }}
-              <button id="newsletter" class="btn" type="submit">ENVIAR</button>
+              <button id="newsletter" class="btn" type="button">ENVIAR</button>
             </div>
-          </form>
         </div>
         <div class="col-12 col-lg-7 offset-lg-1">
           <div class="row">
