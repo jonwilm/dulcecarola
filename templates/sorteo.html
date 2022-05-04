@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{% include 'partials/hero.html' %}
+{% include 'partials/hero.html' with titlePage='SORTEO' %}
 
 <form action="" method="post">
     {% csrf_token %}
@@ -11,5 +11,16 @@
     <input type="submit" value="Submit">
 </form>
 
+{% include 'partials/separador.html' with textSeparador='ADEMÁS' %}
+
+{% include 'partials/campania.html' %}
+
+{% include 'partials/modals.html' %}
+
+{% include 'partials/cecilia.html' %}
+
+{% include 'partials/estadisticas.html' %}
+
+{% include 'partials/testimonios.html' %}
+
 {% endblock content %}
-  

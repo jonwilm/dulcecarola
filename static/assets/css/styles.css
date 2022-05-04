@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   font-size: 12px;
+  color: #494746;
 }
 @media (min-width: 768px) {
   body {
@@ -361,6 +362,13 @@ main {
   line-height: 1;
   text-align: end;
 }
+.sec-sorteo .content-text .text1 .logo {
+  position: absolute;
+  top: 2.5vw;
+  right: 1vw;
+  width: 6vw;
+  transform: rotate(20deg);
+}
 .sec-sorteo .content-text .text2 {
   font-size: 6vw;
   font-weight: 300;
@@ -410,6 +418,11 @@ main {
   }
   .sec-sorteo .content-text .text1 {
     font-size: 6vw;
+  }
+  .sec-sorteo .content-text .text1 .logo {
+    top: 1.5vw;
+    right: 0.6vw;
+    width: 3vw;
   }
   .sec-sorteo .content-text .text2 {
     font-size: 3vw;

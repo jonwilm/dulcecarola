@@ -3,12 +3,24 @@
 
 {% block content %}
 
-{% include 'partials/hero.html' %}
+{% include 'partials/hero.html' with titlePage='<strong>LIVE</strong> CON<br>CECILIA CE' %}
 
 <form action="" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit">
 </form>
+
+{% include 'partials/separador.html' with textSeparador='ADEMÁS' %}
+
+{% include 'partials/sorteo.html' %}
+
+{% include 'partials/testimonios.html' %}
+
+{% include 'partials/campania.html' %}
+
+{% include 'partials/modals.html' %}
+
+{% include 'partials/estadisticas.html' %}
 
 {% endblock content %}
