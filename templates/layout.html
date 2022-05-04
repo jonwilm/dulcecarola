@@ -193,13 +193,10 @@
         <div class="newsletter col-12 col-lg-4">
           <h4>SUSCRIBITE AL NEWSLETTER</h4>
           <p>¡Suscribite y entérate de las promociones exclusivas!</p>
-          <form action="" method="POST">
-            {% csrf_token %}
-            <div class="input-group mb-3">
-              {{ newsletter_form.email }}
-              <button class="btn" type="submit" disabled>ENVIAR</button>
-            </div>
-          </form>
+          <div class="input-group mb-3">
+            {{ newsletter_form.email }}
+            <button id="send-newsletter" class="btn" type="submit">ENVIAR</button>
+          </div>
         </div>
         <div class="col-12 col-lg-7 offset-lg-1">
           <div class="row">
@@ -250,6 +247,36 @@
   </footer>
   
   <script src="{% static 'assets/js/main.js' %}"></script>
+  
+  <script>
+    $('#send-newsletter').on('click', newsletter)
+    function newsletter() {
+      var mailNewsletter = $('footer #id_email').val()
+      
+      if (mailNewsletter == '') {
+        alert('Campo Vacio')
+      } else if (mailNewsletter.indexOf('@', 0) == -1 || mailNewsletter.indexOf('.', 0) == -1) {
+        alert('inserte una cuenta de email valida')
+      } else {
+        fetch("{% url 'home_app:save-newsletter' %}", {
+          method: 'POST',
+          body: JSON.stringify(
+          {
+            mailNewsletter,
+          }
+          )
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.newsletterStatus) {
+            alert('Cuenta de email suscrita a nuestro newsletter')
+          } else {
+            alert('La cuenta de email ya estaba suscrita a nuestro newsletter')
+          }
+        })
+      }
+    }
+  </script>
   
 </body>
 </html>

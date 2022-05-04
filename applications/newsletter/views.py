@@ -1,20 +1,24 @@
+from crypt import methods
+from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import TemplateView
-from applications.newsletter.forms import NewsletterForm
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from applications.newsletter.models import Newsletter
 
+import json
 
-# def newsletter(self, request):
-#     if request.method == 'POST':
-#         form = NewsletterForm(request.POST)
-#         if form.is_valid():
-#             user = authenticate(
-#                 username='root',
-#                 password='dulcecarola321-'
-#             )
-#             login(self.request, user)
-#             form.save()
+@csrf_exempt
+def newsletter(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        n, t = Newsletter.objects.get_or_create(
+            email=data['mailNewsletter'],
+            defaults={}
+        )
+    return JsonResponse({'newsletterStatus': t})
 
 
 class HomeView(TemplateView):

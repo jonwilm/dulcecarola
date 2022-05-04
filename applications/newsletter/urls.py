@@ -15,4 +15,9 @@ urlpatterns = [
         views.EstadisticasView.as_view(),
         name="estadisticas"
     ),
+    path(
+        'save-newsletter',
+        views.newsletter,
+        name="save-newsletter"
+    ),
 ]

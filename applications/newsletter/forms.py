@@ -15,19 +15,10 @@ class NewsletterForm(forms.Form):
             }
         ))
 
-    # def clean(self):
-        # password = self.cleaned_data['password']
 
-        # if not authenticate(username='Asistente', password=password):
-        #     raise forms.ValidationError(
-        #         'Contraseña Incorrecta'
-        #     )
-
-        # return self.cleaned_data
-
-    def save(self, *args, **kwargs):
-        data = self.cleaned_data
-        Newsletter.objects.get_or_create(
-            email=data['email'],
-            defaults={}
-        )
+    # def save(self, *args, **kwargs):
+    #     data = self.cleaned_data
+    #     Newsletter.objects.get_or_create(
+    #         email=data['email'],
+    #         defaults={}
+    #     )
