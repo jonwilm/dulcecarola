@@ -339,6 +339,9 @@ main {
   padding: 0.5rem 0;
 }
 .sec-estadisticas .content,
+.sec-testimonios .content,
+.sec-cecilia .content,
+.sec-creemos .content,
 .sec-campania .content,
 .sec-sorteo .content {
   background-color: #e3e3e3;
