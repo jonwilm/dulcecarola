@@ -472,10 +472,54 @@ main {
 .modal .modal-content .modal-header .btn-close:focus {
   box-shadow: none;
 }
+button.compartir {
+  position: absolute;
+  right: 1rem;
+  top: 100%;
+  transform: translateY(calc(-100% - 1rem));
+  font-size: 2.5vw;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: #C80928;
+}
+button.compartir img {
+  width: 4vw;
+  margin-left: 1vw;
+  margin-top: -0.4vw;
+}
+@media (min-width: 768px) {
+  button.compartir {
+    font-size: 1.5vw;
+  }  
+  button.compartir img {
+    width: 2vw;
+    margin-top: -0.5vw;
+  }  
+}
+/* -------------------------------------- */
+/* ESTADISTICAS */
+/* -------------------------------------- */
+.sec-estadisticas-intro {
+  padding: 0.5rem 0;
+}
+.sec-estadisticas-intro .content {
+  background-color: #e3e3e3;
+}
+.sec-estadisticas-intro .content .sec-text .text {
+  color: #494746;
+  font-size: 4vw;
+  margin: 0;
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .sec-estadisticas-intro .content .sec-text .text {
+    font-size: 2vw;
+  }
+}
 /* -------------------------------------- */
 /* FOOTER */
 /* -------------------------------------- */
-
 footer {
   background-color: #dcdcdc;
   padding: 2rem 0;
