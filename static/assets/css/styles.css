@@ -547,6 +547,10 @@ button.compartir img {
   margin: 0;
   line-height: 1;
 }
+.sec-estadisticas-02 .nota {
+  font-size: 3.5vw;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .sec-estadisticas-intro .content .sec-text .text {
     font-size: 2vw;
@@ -554,8 +558,11 @@ button.compartir img {
   .sec-estadisticas-02 .content-text .title {
     font-size: 3.5vw;
   }
-
+  
   .sec-estadisticas-02 .content-text .text {
+    font-size: 1.3vw;
+  }
+  .sec-estadisticas-02 .nota {
     font-size: 1.3vw;
   }
 }
