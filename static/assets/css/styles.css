@@ -525,6 +525,9 @@ button.compartir img {
   margin: 0;
   text-align: start;
 }
+.sec-estadisticas-02 {
+  padding: 3rem 0;
+}
 .sec-estadisticas-02 .content-img {
   flex-basis: 30%
 }
