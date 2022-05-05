@@ -526,24 +526,34 @@ button.compartir img {
   text-align: start;
 }
 .sec-estadisticas-02 .content-img {
-  width: 8vw;
-  height: auto;
+  flex-basis: 30%
 }
 .sec-estadisticas-02 .content-text {
-  color: ;
+  flex-basis: 70%;
 }
 .sec-estadisticas-02 .content-text .title {
-
+  margin: 0;
+  line-height: 1;
+  color: #81506E;
+  font-size: 8.5vw;
+  font-weight: 700;
 }
 .sec-estadisticas-02 .content-text .text {
-  color: #494746;
-  font-size: 1.5vw;
+  color: #81506E;
+  font-size: 3.5vw;
   margin: 0;
-  text-align: start;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .sec-estadisticas-intro .content .sec-text .text {
     font-size: 2vw;
+  }
+  .sec-estadisticas-02 .content-text .title {
+    font-size: 3.5vw;
+  }
+
+  .sec-estadisticas-02 .content-text .text {
+    font-size: 1.3vw;
   }
 }
 /* -------------------------------------- */
