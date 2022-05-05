@@ -550,6 +550,25 @@ button.compartir img {
 .sec-estadisticas-02 .nota {
   font-size: 3.5vw;
   text-align: center;
+  margin: 0;
+}
+.sec-estadisticas-03 {
+  background-color: #BA947D;
+  padding: 2rem 0;
+}
+.sec-estadisticas-03 .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-estadisticas-03 .content .content-img {
+  flex-basis: 25%;
+}
+.sec-estadisticas-03 .content .content-p {
+  padding-left: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2vw;
 }
 @media (min-width: 768px) {
   .sec-estadisticas-intro .content .sec-text .text {
