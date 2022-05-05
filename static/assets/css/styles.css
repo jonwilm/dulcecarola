@@ -525,6 +525,22 @@ button.compartir img {
   margin: 0;
   text-align: start;
 }
+.sec-estadisticas-02 .content-img {
+  width: 8vw;
+  height: auto;
+}
+.sec-estadisticas-02 .content-text {
+  color: ;
+}
+.sec-estadisticas-02 .content-text .title {
+
+}
+.sec-estadisticas-02 .content-text .text {
+  color: #494746;
+  font-size: 1.5vw;
+  margin: 0;
+  text-align: start;
+}
 @media (min-width: 768px) {
   .sec-estadisticas-intro .content .sec-text .text {
     font-size: 2vw;
