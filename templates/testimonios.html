@@ -18,76 +18,66 @@
       <div class="col-12 col-md-7">
         <div class="p-md-5">
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/ZRTLCWIC1I0?rel=0;autoplay=1" title="YouTube video" allowfullscreen></iframe>
+            <iframe id="video-testimonio" src="https://www.youtube.com/embed/ZRTLCWIC1I0?rel=0;autoplay=1" title="YouTube video" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="text more">Más testimonios</p>
+        <p class="text more p-3 p-md-2 m-0">Más testimonios</p>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
         <div class="slider-testimonios">
           <div>
-            <div class="img-video p-3">
+            <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
+                <a id-video="1" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
                 </a>
-                <p class="title-video">VIDEO 01</p>
+                <p class="title-video">Maneras de tocarse</p>
               </div>
             </div>
           </div>
           <div>
-            <div class="img-video p-3">
+            <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
+                <a id-video="2" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
                 </a>
-                <p class="title-video">VIDEO 01</p>
+                <p class="title-video">Rompiendo tabúes</p>
               </div>
             </div>
           </div>
           <div>
-            <div class="img-video p-3">
+            <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
+                <a id-video="3" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
                 </a>
-                <p class="title-video">VIDEO 01</p>
+                <p class="title-video">Conocerse</p>
               </div>
             </div>
           </div>
           <div>
-            <div class="img-video p-3">
+            <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
+                <a id-video="4" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
                 </a>
-                <p class="title-video">VIDEO 01</p>
+                <p class="title-video">Las mujeres y el placer</p>
               </div>
             </div>
           </div>
           <div>
-            <div class="img-video p-3">
+            <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
+                <a id-video="5" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
                 </a>
-                <p class="title-video">VIDEO 01</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="img-video p-3">
-              <div class="position-relative">
-                <a id-video="" class="btn-video-testimonio">
-                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
-                </a>
-                <p class="title-video">VIDEO 01</p>
+                <p class="title-video">Beneficios de tocarse</p>
               </div>
             </div>
           </div>
@@ -105,6 +95,29 @@
     focusOnSelect: false,
     prevArrow: '<button type="button" class="slick-prev"><img src="static/assets/images/icons/arrow-left.svg"/></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="static/assets/images/icons/arrow-right.svg"/></button>',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    ]
+  });
+  let idVideoTestimonio;
+  let srcVideoTestimonio;
+  $(".btn-video-testimonio").on('click', function () {
+    idVideoTestimonio = $(this).attr("id-video");
+    srcVideoTestimonio = "https://www.youtube.com/embed/" + idVideo + "?rel=0;autoplay=1";
+    $("#video-testimonio").attr("src", srcVideoTestimonio);
   });
 </script>
 
