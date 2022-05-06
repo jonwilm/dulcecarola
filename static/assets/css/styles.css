@@ -554,21 +554,180 @@ button.compartir img {
 }
 .sec-estadisticas-03 {
   background-color: #BA947D;
-  padding: 2rem 0;
-}
-.sec-estadisticas-03 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem 0;
 }
 .sec-estadisticas-03 .content .content-img {
-  flex-basis: 25%;
+  text-align: center;
+}
+.sec-estadisticas-03 .content .content-img img {
+  width: 75%;
 }
 .sec-estadisticas-03 .content .content-p {
-  padding-left: 2rem;
+  padding-top: 0.5rem;
   color: #ffffff;
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 4.5vw;
+  text-align: center;
+}
+.sec-estadisticas-04 {
+  padding: 3rem 0;
+}
+.sec-estadisticas-04 .left img {
+  border-top-left-radius: 25px;
+}
+.sec-estadisticas-04 .left .bg-grey {
+  background-color: #A8A6A7;
+  border-bottom-right-radius: 25px;
+}
+.sec-estadisticas-04 .left .title {
+  color: #ffffff;
+  font-size: 8vw;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+.sec-estadisticas-04 .left .text {
+  color: #ffffff;
+  font-size: 2.5vw;
+  margin: 0;
+}
+.sec-estadisticas-04 .right .border-left-grey {
+  border-left: 3px solid #A8A6A7;
+}
+.sec-estadisticas-04 .right p {
+  color: #81506E;
+  font-size: 3.5vw;
+}
+.sec-estadisticas-04 img {
+  width: 100%;
+}
+.sec-estadisticas-05 .title {
+  background-color: #A8A6A7;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.sec-estadisticas-05 .title div {
+  background-color: #A8A6A7;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 4.5vw;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.sec-estadisticas-05 {
+  padding: 3rem 0;
+}
+.sec-estadisticas-05 img {
+  width: 100%;
+}
+.sec-estadisticas-05 p {
+  font-size: 3.5vw;
+  margin: 0;
+}
+.sec-estadisticas-06 {
+  padding: 3rem 0;
+}
+.sec-estadisticas-06 .progress {
+  border-radius: 50px;
+  height: 1rem;
+}
+.sec-estadisticas-06 .progress-bar {
+  background-color: #BA947D;
+  border-radius: 50px;
+}
+.porcent-progress {
+  position: absolute;
+  background-color: #BA947D;
+  border-radius: 5px;
+  font-size: 3.5vw;
+  line-height: 1;
+  color: #ffffff;
+  padding: 10px;
+  top: -0.5rem;
+  transform: translate(-50%, -100%);
+}
+.porcent-progress:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0; 
+  height: 0; 
+  border-top: 0.5rem solid #BA947D;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent; 
+  transform: translate(-50%, 100%);
+}
+.sec-estadisticas-06 p {
+  font-size: 3.5vw;
+  color: #BA947D;
+  margin: 0;
+  text-align: center;
+  padding: 0 1rem;
+}
+.sec-estadisticas-07 {
+  padding: 3rem 0;
+}
+.sec-estadisticas-07 .content-card {
+  border-radius: 10px;
+  border-top-right-radius: 70px;
+  color: #ffffff;
+  height: 80%;
+}
+.sec-estadisticas-07 .content-card.color01 {
+  background-color: #81506E;
+}
+.sec-estadisticas-07 .content-card.color02 {
+  background-color: #BA947D;
+}
+.sec-estadisticas-07 .pestana {
+  transform: translateY(-25%);
+  z-index: -1;
+  position: relative;
+}
+.sec-estadisticas-07 .content-card .title {
+  margin: 0;
+  line-height: 1;
+  font-size: 7.5vw;
+  font-weight: 700;
+}
+.sec-estadisticas-07 .content-card .title.extra-font {
+  font-size: 18vw;
+}
+.sec-estadisticas-07 .content-card .subtitle {
+  margin: 0;
+  line-height: 1;
+  font-size: 11vw;
+  font-weight: 700;
+}
+.sec-estadisticas-07 .content-card .text {
+  margin: 0;
+  font-size: 4.5vw;
+}
+.sec-estadisticas-07 .pestana img {
+  width: 40%;
+}
+.separador-point {
+  height: 2px;
+  width: 95%;
+  margin: 0 auto;
+  background-image: url(../images/icons/circle-separador.svg);
+  background-size: 8px;
+}
+@media (min-width: 576px) {
+  .sec-estadisticas-07 .content-card .title {
+    font-size: 5.5vw;
+  }
+  .sec-estadisticas-07 .content-card .title.extra-font {
+    font-size: 13.5vw;
+  }
+  .sec-estadisticas-07 .content-card .subtitle {
+    font-size: 8vw;
+  }
+  .sec-estadisticas-07 .content-card .text {
+    font-size: 3vw;
+  }
 }
 @media (min-width: 768px) {
   .sec-estadisticas-intro .content .sec-text .text {
@@ -582,6 +741,85 @@ button.compartir img {
     font-size: 1.3vw;
   }
   .sec-estadisticas-02 .nota {
+    font-size: 1.3vw;
+  }
+  .sec-estadisticas-03 {
+    padding: 2rem 0;
+  }
+  .sec-estadisticas-03 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-estadisticas-03 .content .content-img {
+    flex-basis: 25%;
+  }
+  .sec-estadisticas-03 .content .content-img img {
+    width: 100%;
+  }
+  .sec-estadisticas-03 .content .content-p {
+    padding-left: 2rem;
+    font-size: 2vw;
+  }
+  .sec-estadisticas-04 .left img {
+    border-top-left-radius: 40px;
+  }
+  .sec-estadisticas-04 .left .bg-grey {
+    border-bottom-right-radius: 40px;
+  }
+  .sec-estadisticas-04 .left .title {
+    font-size: 5vw;
+  }
+  .sec-estadisticas-04 .left .text {
+    font-size: 1.3vw;
+  }
+  .sec-estadisticas-04 .right p {
+    font-size: 1.3vw;
+  }
+  .sec-estadisticas-04 img {
+    width: 75%;
+  }
+  .sec-estadisticas-05 .title {
+    background-color: transparent;
+    padding: 0;
+  }
+  .sec-estadisticas-05 .title div {
+    width: max-content;
+    font-size: 2vw;
+    margin: 0 auto;
+  }
+  .sec-estadisticas-05 p {
+    font-size: 1.3vw;
+  }
+  .sec-estadisticas-06 .progress {
+    height: 2rem;
+  }
+  .sec-estadisticas-06 p {
+    font-size: 1.3vw;
+    color: #BA947D;
+    text-align: start;
+    padding: 0;
+  }
+  .porcent-progress {
+    font-size: 1.5vw;
+    padding: 10px;
+    top: -1rem;
+  }
+  .porcent-progress:before {
+    border-top: 1rem solid #BA947D;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+  }
+  .sec-estadisticas-07 .content-card .title {
+    font-size: 2.5vw;
+  }
+  .sec-estadisticas-07 .content-card .title.extra-font {
+    font-size: 6.5vw;
+  }
+  .sec-estadisticas-07 .content-card .subtitle {
+    font-size: 4vw;
+  }
+  .sec-estadisticas-07 .content-card .text {
     font-size: 1.3vw;
   }
 }
