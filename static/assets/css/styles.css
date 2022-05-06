@@ -893,6 +893,206 @@ button.compartir img {
   }
 }
 /* -------------------------------------- */
+/* SORTEO */
+/* -------------------------------------- */
+.sec-sorteo-form {
+  padding: 3rem 0;
+}
+.sec-sorteo-form .content-form {
+  border: 1px solid #494746;
+}
+.sec-sorteo-form .content-text {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  text-align: end;
+  /* pointer-events: none; */
+}
+.sec-sorteo-form .content-text .text1 {
+  font-size: 12vw;
+  font-weight: 300;
+  color: #494746;
+  margin: 0;
+  line-height: 1;
+  text-align: end;
+}
+.sec-sorteo-form .content-text .text1 .logo {
+  position: absolute;
+  top: 1.8vw;
+  right: 1.5vw;
+  width: 7vw;
+  transform: rotate(20deg);
+}
+.sec-sorteo-form .content-text .text2 {
+  font-size: 6vw;
+  font-weight: 300;
+  color: #C80928;
+  margin: 0;
+  line-height: 1;
+  text-align: end;
+  margin-bottom: 0.5rem;
+}
+.sec-sorteo-form .content-text2 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  /* pointer-events: none; */
+}
+.sec-sorteo-form .content-text2 p {
+  color: #000000;
+  margin: 0;
+  line-height: 1;
+}
+.sec-sorteo-form .content-text2 .text1 {
+  font-size: 4.5vw;
+  font-weight: 400;
+}
+.sec-sorteo-form .content-text2 .text2 {
+  font-size: 6.8vw;
+  font-weight: 400;
+  line-height: 0.7;
+}
+.sec-sorteo-form .content-text2 .text3 {
+  font-size: 4.5vw;
+  font-weight: 400;
+}
+.sec-sorteo-form .content-text2 .text4 {
+  font-size: 6vw;
+  font-weight: 400;
+}
+.sec-sorteo-form .sec-title-form {
+  padding: 1rem;
+  background-color: #A62633;
+}
+.sec-sorteo-form .sec-title-form p {
+  margin: 0;
+  font-size: 3.3vw;
+  color: #dcdcdc;
+  line-height: 1;
+}
+.sec-sorteo-form .post-form {
+  background-color: #B9B7B8;
+  padding: 1rem;
+  font-size: 3vw;
+}
+.sec-sorteo-form .post-form p {
+  margin: 0;
+}
+.sec-sorteo-form .post-form span {
+  color: #C80928;
+}
+.sec-sorteo-form .post-form a {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border: 1px solid #494746;
+  text-decoration: none;
+  color: #494746;
+  line-height: 1;
+}
+@media (min-width: 992px) {
+  .sec-sorteo-form .content-text {
+    top: 10%;
+    left: 5%;
+  }
+  .sec-sorteo-form .content-text .text1 {
+    font-size: 6vw;
+  }
+  .sec-sorteo-form .content-text .text1 .logo {
+    top: 1vw;
+    right: 0.8vw;
+    width: 3.5vw;
+  }
+  .sec-sorteo-form .content-text .text2 {
+    font-size: 3vw;
+    margin-bottom: 0.5rem;
+  }
+  .sec-sorteo-form .content-text2 {
+    bottom: 5%;
+    left: 5%;
+  }
+  .sec-sorteo-form .content-text2 .text1 {
+    font-size: 3.5vw;
+  }
+  .sec-sorteo-form .content-text2 .text2 {
+    font-size: 5.3vw;
+  }
+  .sec-sorteo-form .content-text2 .text3 {
+    font-size: 3.5vw;
+  }
+  .sec-sorteo-form .content-text2 .text4 {
+    font-size: 4vw;
+  }
+  .sec-sorteo-form .sec-title-form {
+    padding: 2rem;
+    background-color: #A62633;
+  }
+  .sec-sorteo-form .sec-title-form p {
+    font-size: 2vw;
+  }
+  .sec-sorteo-form .post-form {
+    font-size: 1.5vw;
+  }
+  .sec-sorteo-form .post-form a {
+    padding: 0.5rem 1rem;
+  }
+}
+/* -------------------------------------- */
+/* FORM */
+/* -------------------------------------- */
+form label,
+form input,
+form select {
+  font-size: 3.5vw !important;
+}
+form input,
+form select {
+  border: none !important;
+  border-bottom: 1px solid #494746 !important;
+  border-radius: 0 !important;
+}
+form input:focus,
+form select:focus {
+  box-shadow: 0 0 5px #C80928 !important;
+}
+form label span {
+  color: #C80928;
+}
+form button.compartir {
+  position: initial;
+  transform: translate(0, 0);
+}
+.footer-form {
+  font-size: 3.5vw;
+}
+.footer-form span {
+  color: #C80928;
+}
+.footer-form button[type="submit"] {
+  background-color: #dcdcdc;
+  padding: 0.5rem 1rem;
+  border: 1px solid #494746;
+  border-radius: 10px;
+  line-height: 1;
+  transition: all 0.3s;
+}
+.footer-form button[type="submit"]:hover {
+  background-color: #494746;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  form label,
+  form input,
+  form select {
+    font-size: 1.5vw !important;
+  }
+  .footer-form {
+    font-size: 1.5vw;
+  }
+  .footer-form button[type="submit"] {
+    padding: 1rem;
+  }
+}
+/* -------------------------------------- */
 /* SLICK */
 /* -------------------------------------- */
 .slick-next {

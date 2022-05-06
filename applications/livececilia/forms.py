@@ -10,7 +10,7 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su nombre y apellido',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
@@ -20,7 +20,7 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su fecha de nacimiento',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
@@ -30,17 +30,17 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su genero',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
     code_zip = forms.CharField(
         label='Código postal',
-        required=True,
+        required=False,
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su codigo postal',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
@@ -50,7 +50,7 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su ciudad',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
@@ -60,7 +60,7 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.EmailInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su email',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
@@ -70,7 +70,7 @@ class LiveCeciliaForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                'placeholder': 'Ingrese su telefono',
+                'placeholder': '',
                 'autocomplete': 'off',
             }
         ))
