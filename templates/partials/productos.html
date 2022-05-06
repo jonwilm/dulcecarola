@@ -1,0 +1,99 @@
+{% load static %}
+
+<div class="sec-productos">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="slider-productos">
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/underwear">
+                  <img class="w-100" src="{% static 'assets/images/productos/underwear.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">UNDERWEAR</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/makeup/labiales/mate">
+                  <img class="w-100" src="{% static 'assets/images/productos/labialesmate.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">LABIALES MATE</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/makeup/labiales/brillo">
+                  <img class="w-100" src="{% static 'assets/images/productos/trompaglossy.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">LABIAL TROMPA GLOSSY</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/fragancias/perfumes">
+                  <img class="w-100" src="{% static 'assets/images/productos/perfumes.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">PERFUMES</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/fragancias/cremas">
+                  <img class="w-100" src="{% static 'assets/images/productos/cremas.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">CREMAS</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-producto p-1 p-md-2">
+              <div class="position-relative">
+                <a href="https://www.dulcecarola.com/makeup/esmaltes">
+                  <img class="w-100" src="{% static 'assets/images/productos/esmaltes.jpg' %}" class="" alt="testimonio">
+                  <p class="title-producto">ESMALTES</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".slider-productos").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="static/assets/images/icons/arrow-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="static/assets/images/icons/arrow-right.svg"/></button>',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    ]
+  });
+</script>

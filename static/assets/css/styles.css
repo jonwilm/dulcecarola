@@ -1159,6 +1159,31 @@ form button.compartir {
   }
 }
 /* -------------------------------------- */
+/* PRODUCTOS */
+/* -------------------------------------- */
+.sec-productos .slider-productos a {
+  cursor: pointer;
+}
+.sec-productos .slider-productos .title-producto {
+  background-color: #00000055;
+  position: absolute;
+  color: #ffffff;
+  bottom: 0.5rem;
+  margin: 0;
+  font-size: 3vw;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sec-productos .slider-productos .title-producto {
+    font-size: 1.3vw;
+  }
+  .sec-productos .slider-productos .title-producto {
+    bottom: 1rem;
+    font-size: 1.3vw;
+  }
+}
+/* -------------------------------------- */
 /* SLICK */
 /* -------------------------------------- */
 .slick-next {
