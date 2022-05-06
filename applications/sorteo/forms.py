@@ -45,7 +45,7 @@ class SorteoForm(forms.Form):
             }
         ))
     city = forms.CharField(
-        label='Ciudad',
+        label='Provincia',
         required=True,
         widget=forms.TextInput(
             attrs={
