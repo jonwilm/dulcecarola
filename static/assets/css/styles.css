@@ -476,7 +476,6 @@ main {
 }
 .modal .modal-content .modal-header .btn-close {
   border-radius: 50px;
-  /* background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F14F78'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; */
   background: #fff url(../images/icons/icon-close.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -761,6 +760,9 @@ button.compartir img {
     padding-left: 2rem;
     font-size: 2vw;
   }
+  .sec-estadisticas-04 {
+    padding: 2rem 0;
+  }
   .sec-estadisticas-04 .left img {
     border-top-left-radius: 40px;
   }
@@ -779,6 +781,9 @@ button.compartir img {
   .sec-estadisticas-04 img {
     width: 75%;
   }
+  .sec-estadisticas-05 {
+    padding: 2rem 0;
+  }
   .sec-estadisticas-05 .title {
     background-color: transparent;
     padding: 0;
@@ -790,6 +795,9 @@ button.compartir img {
   }
   .sec-estadisticas-05 p {
     font-size: 1.3vw;
+  }
+  .sec-estadisticas-06 {
+    padding: 2rem 0;
   }
   .sec-estadisticas-06 .progress {
     height: 2rem;
@@ -810,6 +818,9 @@ button.compartir img {
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
   }
+  .sec-estadisticas-07 {
+    padding: 2rem 0;
+  }
   .sec-estadisticas-07 .content-card .title {
     font-size: 2.5vw;
   }
@@ -822,6 +833,80 @@ button.compartir img {
   .sec-estadisticas-07 .content-card .text {
     font-size: 1.3vw;
   }
+}
+/* -------------------------------------- */
+/* TESTIMONIOS */
+/* -------------------------------------- */
+.sec-testimonios-01 {
+  padding: 0.5rem 0;
+}
+.sec-testimonios-01 .content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #dcdcdc;
+}
+.sec-testimonios-01 .title {
+  text-align: center;
+  color: #C80928;
+  font-size: 12vw;
+  font-weight: 300;
+  margin: 0;
+}
+.sec-testimonios-01 .text {
+  text-align: center;
+  font-size: 4vw;
+}
+.sec-testimonios-01 .text.more {
+  text-align: start;
+}
+.sec-testimonios-01 .slider-testimonios a {
+  cursor: pointer;
+}
+.sec-testimonios-01 .slider-testimonios .title-video {
+  background-color: #C8092855;
+  position: absolute;
+  color: #ffffff;
+  bottom: 1rem;
+  margin: 0;
+  font-size: 1.3vw;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sec-testimonios-01 .title {
+    font-size: 4.5vw;
+  }
+  .sec-testimonios-01 .text {
+    font-size: 1.3vw;
+  }
+  .sec-testimonios-01 .slider-testimonios .title-video {
+    font-size: 1.3vw;
+  }
+}
+/* -------------------------------------- */
+/* SLICK */
+/* -------------------------------------- */
+.slick-next {
+  width: 40px;
+  right: 1rem;
+  transform: translateY(-100%);
+}
+.slick-prev {
+  left: 1rem;
+  width: 40px;
+  z-index: 1;
+  transform: translateY(-100%);
+}
+.slick-next:before,
+.slick-prev:before {
+  display: none;
+}
+.slider-title {
+  outline: none;
+}
+.slider-title .slick-track {
+  display: flex;
+  align-items: center;
 }
 /* -------------------------------------- */
 /* FOOTER */

@@ -6,6 +6,108 @@
 
 {% include 'partials/hero.html' with titlePage='TESTIMONIOS' %}
 
+<div class="sec-testimonios-01">
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-5 d-flex align-items-center">
+        <div class="content-text">
+          <p class="title">ESCUCHALAS</p>
+          <p class="text">Ellas nos cuentan sus experiencias y nos dan su opinión sobre temas que nos afectan a todas.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="p-md-5">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/ZRTLCWIC1I0?rel=0;autoplay=1" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="text more">Más testimonios</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="slider-testimonios">
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-video p-3">
+              <div class="position-relative">
+                <a id-video="" class="btn-video-testimonio">
+                  <img class="w-100" src="{% static 'assets/images/testimonios/img-home.png' %}" class="" alt="testimonio">
+                </a>
+                <p class="title-video">VIDEO 01</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".slider-testimonios").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    focusOnSelect: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="static/assets/images/icons/arrow-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="static/assets/images/icons/arrow-right.svg"/></button>',
+  });
+</script>
+
 {% include 'partials/separador.html' with textSeparador='ADEMÁS' %}
 
 {% include 'partials/sorteo.html' %}
@@ -18,5 +120,5 @@
 
 {% include 'partials/estadisticas.html' %}
 
+
 {% endblock content %}
-  
