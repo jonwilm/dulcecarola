@@ -906,7 +906,7 @@ button.compartir img {
   top: 5%;
   left: 2%;
   text-align: end;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 .sec-sorteo-form .content-text .text1 {
   font-size: 12vw;
@@ -936,7 +936,7 @@ button.compartir img {
   position: absolute;
   bottom: 5%;
   left: 5%;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 .sec-sorteo-form .content-text2 p {
   color: #000000;
@@ -1090,6 +1090,72 @@ form button.compartir {
   }
   .footer-form button[type="submit"] {
     padding: 1rem;
+  }
+}
+/* -------------------------------------- */
+/* CECILIA */
+/* -------------------------------------- */
+.sec-cecilia-form {
+  padding: 3rem 0;
+}
+.sec-cecilia-form .content-form {
+  border: 1px solid #494746;
+}
+.sec-cecilia-form .content-text {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  text-align: center;
+  pointer-events: none;
+}
+.sec-cecilia-form .content-text .text1 {
+  font-size: 4.5vw;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+}
+.sec-cecilia-form .content-text .text2 {
+  font-size: 4.4vw;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.sec-cecilia-form .content-text img {
+  width: 30%;
+}
+.sec-cecilia-form .sec-title-form {
+  padding: 1rem;
+  background-color: #A62633;
+}
+.sec-cecilia-form .sec-title-form p {
+  margin: 0;
+  font-size: 3.3vw;
+  color: #dcdcdc;
+  line-height: 1;
+}
+@media (min-width: 992px) {
+  .sec-cecilia-form .content-text {
+    top: 10%;
+    right: 5%;
+  }
+  .sec-cecilia-form .content-text .text1 {
+    font-size: 3vw;
+  }
+  .sec-cecilia-form .content-text .text2 {
+    font-size: 2.9vw;
+    margin-bottom: 0.5rem;
+  }
+  .sec-cecilia-form .sec-title-form {
+    padding: 2rem;
+    background-color: #A62633;
+  }
+  .sec-cecilia-form .sec-title-form p {
+    font-size: 2vw;
   }
 }
 /* -------------------------------------- */

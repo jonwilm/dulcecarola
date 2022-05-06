@@ -5,11 +5,99 @@
 
 {% include 'partials/hero.html' with titlePage='<strong>LIVE</strong> CON<br>CECILIA CE' %}
 
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+<div class="sec-cecilia-form">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <div class="content-form">
+          <div class="sec-img position-relative">
+            <img class="w-100" src="{% static 'assets/images/cecilia/img-home.png' %}" alt="Cecilia CE">
+            <div class="content-text">
+              <span>
+                <p class="text1">
+                  Lic.Cecilia Ce
+                </p>
+                <p class="text2">Miercoles 27/4</p>
+                <img src="{% static 'assets/images/cecilia/ig-live.png' %}" alt="Live">
+              </span>
+            </div>
+          </div>
+          <div class="sec-title-form">
+            <p>Anotate para activar tu recordatorio.</p>
+          </div>
+          <form action="" method="post" class="py-4 px-3">
+            {% csrf_token %}
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> NOMBRE Y APELLIDO</label>
+              <div class="col-sm-8">
+                {{ form.name }}
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> FECHA DE NACIMIENTO</label>
+              <div class="col-sm-8">
+                {{ form.date_nac }}
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> GENERO</label>
+              <div class="col-sm-8">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label">CÓDIGO POSTAL</label>
+              <div class="col-sm-8">
+                {{ form.code_zip }}
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> CIUDAD</label>
+              <div class="col-sm-8">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> EMAIL</label>
+              <div class="col-sm-8">
+                {{ form.email }}
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> TELÉFONO</label>
+              <div class="col-sm-8">
+                {{ form.phone }}
+              </div>
+            </div>
+            <div class="row mt-5 footer-form">
+              <div class="col-4 text-start d-flex align-items-center justify-content-start">
+                <button class="compartir">
+                  <span>COMPARTIR</span><img src="{% static 'assets/images/icons/compartir.png' %}" alt="Compartir">
+                </button>
+              </div>
+              <div class="col-4 text-center d-flex align-items-center justify-content-center">
+                <div><span>*</span> Datos Obligatorios</div>
+              </div>
+              <div class="col-4 text-end d-flex align-items-center justify-content-end">
+                <button type="submit">ENVIAR</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% include 'partials/separador.html' with textSeparador='ADEMÁS' %}
 
