@@ -197,6 +197,9 @@
             {{ newsletter_form.email }}
             <button id="send-newsletter" class="btn" type="submit">ENVIAR</button>
           </div>
+          <div id="news-msg" class="d-none" role="alert">
+            <span></span>
+          </div>
         </div>
         <div class="col-12 col-lg-7 offset-lg-1">
           <div class="row">
@@ -254,9 +257,11 @@
       var mailNewsletter = $('footer #id_email').val()
       
       if (mailNewsletter == '') {
-        alert('Campo Vacio')
+        $('#news-msg').removeClass().addClass('alert alert-warning fade show m-0')
+        $('#news-msg span').text('Ingrese un Email')
       } else if (mailNewsletter.indexOf('@', 0) == -1 || mailNewsletter.indexOf('.', 0) == -1) {
-        alert('inserte una cuenta de email valida')
+        $('#news-msg').removeClass().addClass('alert alert-warning fade show m-0')
+        $('#news-msg span').text('Ingrese un Email valido')
       } else {
         fetch("{% url 'home_app:save-newsletter' %}", {
           method: 'POST',
@@ -269,9 +274,11 @@
         .then(response => response.json())
         .then(data => {
           if (data.newsletterStatus) {
-            alert('Cuenta de email suscrita a nuestro newsletter')
+            $('#news-msg').removeClass().addClass('alert alert-success fade show m-0')
+            $('#news-msg span').text('Registro satisfactorio')
           } else {
-            alert('La cuenta de email ya estaba suscrita a nuestro newsletter')
+            $('#news-msg').removeClass().addClass('alert alert-info fade show m-0')
+            $('#news-msg span').text('Email ya existe en nuestro Newsletter')
           }
         })
       }

@@ -1250,7 +1250,7 @@ footer .newsletter p {
   line-height: 2.5;
 }
 footer .newsletter input,
-footer .newsletter button {
+footer .newsletter button#send-newsletter {
   font-size: 0.8rem;
   color: #494746;
   background-color: #dcdcdc;
