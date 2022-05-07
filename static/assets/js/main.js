@@ -99,3 +99,13 @@ $("#video-player").on("show.bs.modal", function () {
     $("#video-player iframe").attr("src", srcVideo);
   }, 100);
 });
+// ------------------------------------------------------------
+// VIDEOS SHORT TESTIMONIOS
+// ------------------------------------------------------------
+$('.slider-testimonios a').hover(function() {
+  $('.content-video', this).css('opacity', '1')
+  $('video', this).get(0).play()
+},function() {
+  $('.content-video', this).css('opacity', '0')
+  $('video', this).get(0).pause()
+})

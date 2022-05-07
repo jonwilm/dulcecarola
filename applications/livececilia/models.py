@@ -7,11 +7,10 @@ class LiveCecilia(models.Model):
     date_nac = models.DateField('Fecha de Naciemiento')
     genere = models.CharField('Género', max_length=2)
     code_zip = models.CharField('Código Postal', max_length=10)
-    city = models.CharField('Ciudad', max_length=50)
-    email = models.CharField('Email', max_length=80, unique=True)
+    city = models.CharField('Ciudad', max_length=3)
+    email = models.CharField('Email', max_length=80, unique=True, null=False)
     phone = models.CharField('Teléfono', max_length=15)
-    created_at = models.DateTimeField(
-        'Fecha de suscripción', auto_now=False, auto_now_add=True)
+    created_at = models.DateTimeField('Fecha de suscripción', auto_now=False, auto_now_add=True)
 
     class Meta:
 

@@ -28,6 +28,8 @@
   <script src="{% static 'assets/libs/slick/slick/slick.min.js' %}"></script>
   
   <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+  {% block linkLocal %}{% endblock linkLocal %}
   
 </head>
 <body>
@@ -284,6 +286,8 @@
       }
     }
   </script>
+
+  {% block scriptLocal %}{% endblock scriptLocal %}
   
 </body>
 </html>
