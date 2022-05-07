@@ -109,3 +109,48 @@ $('.slider-testimonios a').hover(function() {
   $('.content-video', this).css('opacity', '0')
   $('video', this).get(0).pause()
 })
+// ------------------------------------------------------------
+// COMPARTIR
+// ------------------------------------------------------------
+function compartirFB() {
+  let url = 'http://www.facebook.com/sharer.php?u=' + window.location
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}
+function compartirTW(text, hashtag) {
+  let url = 'https://twitter.com/intent/tweet?text=' + text + '&url=' + window.location + '&hashtags=' + hashtag
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}
+function compartirIN(text) {
+  let url = 'http://www.linkedin.com/shareArticle?url=' + window.location + '&title=' + text
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}
+function compartirWA(text, hashtag) {
+  let url = 'https://api.whatsapp.com/send?text=' + text + ' ' + window.location + ' ' + hashtag
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}
+function compartirTG(text) {
+  let url = 'https://telegram.me/share/url?url=' + window.location + '&text=' + text
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}
+function compartirMail(subject, body) {
+  let url = 'mailto:?subject=' + subject + '&body=' + body + ' ' + window.location
+  window.open(
+    '' + url + '',
+    'compartir',
+    'resizable, scrollbars, status, width=650, height=450');
+}

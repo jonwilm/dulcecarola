@@ -889,9 +889,6 @@ button.compartir img {
   opacity: 0;
   transition: all 0.3s;
 }
-.sec-testimonios-01 .slider-testimonios .content-video .video-short {
-  
-}
 @media (min-width: 768px) {
   .sec-testimonios-01 .title {
     font-size: 4.5vw;
