@@ -1,4 +1,6 @@
 from django import forms
+from django.core.exceptions import ValidationError
+
 from applications.livececilia.models import LiveCecilia
 
 
@@ -112,6 +114,13 @@ class LiveCeciliaForm(forms.Form):
                 'autocomplete': 'off',
             }
         ))
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if LiveCecilia.objects.filter(email=email).exists():
+            raise ValidationError(
+                "Email ya se encuentra resgistrado")
+        return email
 
 
     def save(self, *args, **kwargs):

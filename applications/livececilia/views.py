@@ -10,7 +10,7 @@ class LiveCeciliaView(SuccessMessageMixin, FormView):
     template_name = 'livececilia.html'
     form_class = LiveCeciliaForm
     success_url = reverse_lazy('livececilia_app:livececilia')
-    success_message = 'Anotado satisfactoriamente'
+    success_message = 'Registrado satisfactoriamente'
 
     def form_valid(self, form):
         form.save()

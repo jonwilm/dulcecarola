@@ -5,7 +5,7 @@ from django.views.generic.edit import FormView
 from applications.sorteo.forms import SorteoForm
 
 
-class SorteoView(FormView):
+class SorteoView(SuccessMessageMixin, FormView):
 
     template_name = 'sorteo.html'
     form_class = SorteoForm

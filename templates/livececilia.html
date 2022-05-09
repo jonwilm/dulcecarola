@@ -30,18 +30,6 @@
 </div>
 {% endif %}
 
-{% if form.errors %}
-    {% for key, value in form.errors.items %} 
-        <div class="row testrow">
-            <div class="alert alert-error col-lg-12">
-                {{ value | striptags }}
-            </div>
-        </div>
-    {% endfor %}
-{% endif %}
-
-{{ form.errors }}
-
 <div class="sec-cecilia-form">
   <div class="container-fluid">
     <div class="row">

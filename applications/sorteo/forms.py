@@ -117,7 +117,7 @@ class SorteoForm(forms.Form):
     def clean_email(self):
         email = self.cleaned_data['email']
         if Sorteo.objects.filter(email=email).exists():
-            raise ValidationError("Email already exists")
+            raise ValidationError("Email ya se encuentra participando en el sorteo")
         return email
 
     def save(self, *args, **kwargs):
