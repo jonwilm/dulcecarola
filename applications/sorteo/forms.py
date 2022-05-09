@@ -1,6 +1,7 @@
 from django import forms
-from applications.sorteo.models import Sorteo
+from django.core.exceptions import ValidationError
 
+from applications.sorteo.models import Sorteo
 
 product_genere = [
     ('', 'Seleccione...'),
@@ -112,6 +113,12 @@ class SorteoForm(forms.Form):
                 'autocomplete': 'off',
             }
         ))
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if Sorteo.objects.filter(email=email).exists():
+            raise ValidationError("Email already exists")
+        return email
 
     def save(self, *args, **kwargs):
         data = self.cleaned_data
