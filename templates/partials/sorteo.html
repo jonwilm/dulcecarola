@@ -3,7 +3,7 @@
 <div class="sec-sorteo">
   <div class="content container-fluid">
     <div class="row">
-      <div class="col-12 col-md-6 px-0">
+      <div class="col-12 col-md-6 px-0 {{ posImgRight }}">
         <div class="sec-img position-relative">
           <a href="{% url 'sorteo_app:sorteo' %}">
             <img class="w-100" src="{% static 'assets/images/sorteo/img-home.png' %}" alt="Sorteo">
@@ -20,7 +20,7 @@
           </a>
         </div>
       </div>
-      <div class="col-12 col-md-6 px-0">
+      <div class="col-12 col-md-6 px-0 {{ posTextLeft }}">
         <div class="sec-text h-100">
           <a class="title" href="{% url 'sorteo_app:sorteo' %}">
             <p>SORTEO DE 10 KITS</p>

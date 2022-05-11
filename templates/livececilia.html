@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label class="col-sm-4 col-form-label"><span>*</span> FECHA DE NACIMIENTO</label>
+              <label class="col-sm-4 col-form-label">FECHA DE NACIMIENTO</label>
               <div class="col-sm-8">
                 {{ form.date_nac }}
                 {% for error in form.date_nac.errors %}
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label class="col-sm-4 col-form-label"><span>*</span> GENERO</label>
+              <label class="col-sm-4 col-form-label">GÉNERO</label>
               <div class="col-sm-8">
                 {{ form.genere }}
                 {% for error in form.genere.errors %}
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label class="col-sm-4 col-form-label"><span>*</span> PROVINCIA</label>
+              <label class="col-sm-4 col-form-label">PROVINCIA</label>
               <div class="col-sm-8">
                 {{ form.city }}
                 {% for error in form.city.errors %}
@@ -107,7 +107,7 @@
               </div>
             </div>
             <div class="mb-3 row">
-              <label class="col-sm-4 col-form-label"><span>*</span> TELÉFONO</label>
+              <label class="col-sm-4 col-form-label">TELÉFONO</label>
               <div class="col-sm-8">
                 {{ form.phone }}
                 {% for error in form.phone.errors %}
@@ -139,7 +139,7 @@
 
 {% include 'partials/testimonios.html' %}
 
-{% include 'partials/estadisticas.html' %}
+{% include 'partials/estadisticas.html' with posImgRight="order-1 order-md-2" posTextLeft="order-2 order-md-1" %}
 
 {% include 'partials/sorteo.html' %}
 

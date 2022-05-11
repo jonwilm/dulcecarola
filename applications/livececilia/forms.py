@@ -54,7 +54,7 @@ class LiveCeciliaForm(forms.Form):
         ))
     date_nac = forms.DateField(
         label='Fecha de nacimiento',
-        required=True,
+        required=False,
         widget=forms.DateInput(
             attrs={
                 'class': 'form-control',
@@ -63,8 +63,8 @@ class LiveCeciliaForm(forms.Form):
             }
         ))
     genere = forms.CharField(
-        label='Genero',
-        required=True,
+        label='Género',
+        required=False,
         widget=forms.Select(
             choices=product_genere,
             attrs={
@@ -85,7 +85,7 @@ class LiveCeciliaForm(forms.Form):
         ))
     city = forms.CharField(
         label='Provincia',
-        required=True,
+        required=False,
         widget=forms.Select(
             choices=product_city,
             attrs={
@@ -106,7 +106,7 @@ class LiveCeciliaForm(forms.Form):
         ))
     phone = forms.CharField(
         label='Teléfono',
-        required=True,
+        required=False,
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',

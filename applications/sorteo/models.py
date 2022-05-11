@@ -6,7 +6,7 @@ class Sorteo(models.Model):
     name = models.CharField('Nombre y Apellido', max_length=200)
     date_nac = models.DateField('Fecha de Naciemiento')
     genere = models.CharField('Género', max_length=2)
-    code_zip = models.CharField('Código Postal', max_length=10)
+    code_zip = models.CharField('Código Postal', max_length=10, blank=True)
     city = models.CharField('Ciudad', max_length=3)
     email = models.CharField('Email', max_length=80, unique=True)
     phone = models.CharField('Teléfono', max_length=15)
