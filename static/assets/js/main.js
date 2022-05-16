@@ -89,7 +89,7 @@ let idVideo;
 let srcVideo;
 $(".btn-video-yt").click(function () {
   idVideo = $(this).attr("id-video");
-  srcVideo = "https://www.youtube.com/embed/" + idVideo + "?rel=0;autoplay=1";
+  srcVideo = "https://www.youtube.com/embed/" + idVideo + "?autoplay=1&rel=0";
 });
 $("#video-player").on("hidden.bs.modal", function () {
   $("#video-player iframe").attr("src", "");

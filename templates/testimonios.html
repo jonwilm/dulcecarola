@@ -18,7 +18,7 @@
       <div class="col-12 col-md-7">
         <div class="p-md-5">
           <div class="ratio ratio-16x9">
-            <iframe id="video-testimonio" src="https://www.youtube.com/embed/ZRTLCWIC1I0?rel=0;autoplay=1" title="YouTube video" allowfullscreen></iframe>
+            <iframe id="video-testimonio" src="https://www.youtube.com/embed/XagIvQMjjlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
           <div>
             <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="1" class="btn-video-testimonio">
+                <a id-video="XagIvQMjjlk" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/maneras.png' %}" class="" alt="testimonio">
                   <div class="content-video">
                     <video class="video-short" muted loop height="100%">
@@ -49,7 +49,7 @@
           <div>
             <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="2" class="btn-video-testimonio">
+                <a id-video="LzJpQw8NQGs" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/tabues.png' %}" class="" alt="testimonio">
                   <div class="content-video">
                     <video class="video-short" muted loop height="100%">
@@ -64,7 +64,7 @@
           <div>
             <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="3" class="btn-video-testimonio">
+                <a id-video="6IZA2V8nqA0" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/conocerse.jpg' %}" class="" alt="testimonio">
                   <div class="content-video">
                     <video class="video-short" muted loop height="100%">
@@ -79,7 +79,7 @@
           <div>
             <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="4" class="btn-video-testimonio">
+                <a id-video="ZTcDQHxmjWs" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/placer.png' %}" class="" alt="testimonio">
                   <div class="content-video">
                     <video class="video-short" muted loop height="100%">
@@ -94,7 +94,7 @@
           <div>
             <div class="img-video p-1 p-md-2">
               <div class="position-relative">
-                <a id-video="5" class="btn-video-testimonio">
+                <a id-video="0p_FrVnpmGo" class="btn-video-testimonio">
                   <img class="w-100" src="{% static 'assets/images/testimonios/beneficios.png' %}" class="" alt="testimonio">
                   <div class="content-video">
                     <video class="video-short" muted loop height="100%">
@@ -141,7 +141,7 @@
   let srcVideoTestimonio;
   $(".btn-video-testimonio").on('click', function () {
     idVideoTestimonio = $(this).attr("id-video");
-    srcVideoTestimonio = "https://www.youtube.com/embed/" + idVideo + "?rel=0;autoplay=1";
+    srcVideoTestimonio = "https://www.youtube.com/embed/" + idVideoTestimonio + "?autoplay=1&rel=0";
     $("#video-testimonio").attr("src", srcVideoTestimonio);
   });
 </script>
