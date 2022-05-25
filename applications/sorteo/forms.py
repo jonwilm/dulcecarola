@@ -41,8 +41,18 @@ product_city = [
 
 class SorteoForm(forms.Form):
 
-    name = forms.CharField(
-        label='Nombre y Apellido',
+    firstname = forms.CharField(
+        label='Nombre',
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': '',
+                'autocomplete': 'off',
+            }
+        ))
+    lastname = forms.CharField(
+        label='Apellido',
         required=True,
         widget=forms.TextInput(
             attrs={
@@ -123,7 +133,8 @@ class SorteoForm(forms.Form):
     def save(self, *args, **kwargs):
         data = self.cleaned_data
         Sorteo.objects.get_or_create(
-            name=data['name'],
+            firstname=data['firstname'],
+            lastname=data['lastname'],
             date_nac=data['date_nac'],
             genere=data['genere'],
             code_zip=data['code_zip'],

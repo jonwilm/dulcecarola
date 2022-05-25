@@ -9,17 +9,17 @@ class LiveCeciliaResource(resources.ModelResource):
     class Meta:
         model = LiveCecilia
         exclude = ('imported', )
-        fields = ('name', 'date_nac', 'genere', 'code_zip',
+        fields = ('firstname', 'lastname', 'date_nac', 'genere', 'code_zip',
                   'city', 'email', 'phone', 'created_at',)
         export_order = ('email', )
 
 
 class LiveCeciliaAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
-    list_display = ('name', 'date_nac', 'genere', 'code_zip',
+    list_display = ('firstname', 'lastname', 'date_nac', 'genere', 'code_zip',
                     'city', 'email', 'phone', 'created_at')
-    search_fields = ('name', 'email',)
-    ordering = ('name', )
+    search_fields = ('firstname', 'lastname', 'email',)
+    ordering = ('firstname', 'lastname', )
 
 
 admin.site.register(LiveCecilia, LiveCeciliaAdmin)

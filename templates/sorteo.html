@@ -56,15 +56,24 @@
             </div>
           </div>
           <div class="sec-title-form">
-            <p>Completá y envianos el formulario para participar.</p>
+            <p>Completá y envianos el formulario para participar. El sorteo se realizará el 1/7/2022.</p>
           </div>
           <form action="" method="post" class="py-4 px-3">
             {% csrf_token %}
             <div class="mb-3 row">
-              <label class="col-sm-4 col-form-label"><span>*</span> NOMBRE Y APELLIDO</label>
+              <label class="col-sm-4 col-form-label"><span>*</span> NOMBRE</label>
               <div class="col-sm-8">
-                {{ form.name }}
-                {% for error in form.name.errors %}
+                {{ form.firstname }}
+                {% for error in form.firstname.errors %}
+                <p class="text-danger">{{ error }}</p>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label class="col-sm-4 col-form-label"><span>*</span> APELLIDO</label>
+              <div class="col-sm-8">
+                {{ form.lastname }}
+                {% for error in form.lastname.errors %}
                 <p class="text-danger">{{ error }}</p>
                 {% endfor %}
               </div>

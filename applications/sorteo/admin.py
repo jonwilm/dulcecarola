@@ -9,15 +9,17 @@ class SorteoResource(resources.ModelResource):
     class Meta:
         model = Sorteo
         exclude = ('imported', )
-        fields = ('name', 'date_nac', 'genere', 'code_zip', 'city', 'email', 'phone', 'created_at',)
+        fields = ('firstname', 'lastname', 'date_nac', 'genere',
+                  'code_zip', 'city', 'email', 'phone', 'created_at',)
         export_order = ('email', )
 
 
 class SorteoAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
-    list_display = ('name', 'date_nac', 'genere', 'code_zip', 'city','email', 'phone', 'created_at')
-    search_fields = ('name', 'email',)
-    ordering = ('name', )
+    list_display = ('firstname', 'lastname', 'date_nac', 'genere',
+                    'code_zip', 'city', 'email', 'phone', 'created_at')
+    search_fields = ('firstname', 'lastname', 'email',)
+    ordering = ('firstname', 'lastname', )
 
 
 admin.site.register(Sorteo, SorteoAdmin)

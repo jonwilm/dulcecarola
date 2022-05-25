@@ -250,6 +250,9 @@ main {
 .nav-mobile .accordion-body li {
   list-style: none;
 }
+.text-red {
+  color: #C80928 !important;
+}
 
 /* -------------------------------------- */
 /* GLOBALS PAGES */
@@ -1162,7 +1165,7 @@ form button.compartir {
 }
 .sec-cecilia-form .content-text {
   position: absolute;
-  top: 5%;
+  top: 20%;
   right: 2%;
   text-align: center;
   pointer-events: none;
@@ -1182,10 +1185,9 @@ form button.compartir {
   margin: 0;
   line-height: 1;
   text-align: center;
-  margin-bottom: 0.5rem;
 }
 .sec-cecilia-form .content-text img {
-  width: 30%;
+  width: 40%;
 }
 .sec-cecilia-form .sec-title-form {
   padding: 1rem;
@@ -1199,15 +1201,14 @@ form button.compartir {
 }
 @media (min-width: 992px) {
   .sec-cecilia-form .content-text {
-    top: 10%;
-    right: 5%;
+    top: 20%;
+    right: 8%;
   }
   .sec-cecilia-form .content-text .text1 {
     font-size: 3vw;
   }
   .sec-cecilia-form .content-text .text2 {
     font-size: 2.9vw;
-    margin-bottom: 0.5rem;
   }
   .sec-cecilia-form .sec-title-form {
     padding: 2rem;
