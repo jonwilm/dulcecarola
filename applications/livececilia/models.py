@@ -3,8 +3,8 @@ from django.db import models
 
 class LiveCecilia(models.Model):
 
-    firstname = models.CharField('Nombre', max_length=200, default='Nombre')
-    lastname = models.CharField('Apellido', max_length=200, default='Nombre')
+    firstname = models.CharField('Nombre', max_length=200)
+    lastname = models.CharField('Apellido', max_length=200)
     date_nac = models.DateField('Fecha de Nacimiento', blank=True)
     genere = models.CharField('Género', max_length=2, blank=True)
     code_zip = models.CharField('Código Postal', max_length=10, blank=True)
