@@ -1050,6 +1050,11 @@ button.compartir img {
   text-decoration: none;
   color: #494746;
   line-height: 1;
+  transition: all 0.3s;
+}
+.sec-sorteo-form .post-form a:hover {
+  background-color: #494746;
+  color: #ffffff;
 }
 @media (min-width: 992px) {
   .sec-sorteo-form .content-text {
