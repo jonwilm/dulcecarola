@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 
 from applications.sorteo.models import Sorteo
 
-product_genere = [
+PRODUCT_GENERE = [
     ('', 'Seleccione...'),
     ('F', 'Femenino'),
     ('M', 'Masculino'),
@@ -11,7 +11,7 @@ product_genere = [
     ('NC', 'No contesta'),
 ]
 
-product_city = [
+PRODUCT_CITY = [
     ('', 'Seleccione...'),
     ('1', 'Buenos Aires'),
     ('2', 'Ciudad Autónoma de Buenos Aires'),
@@ -75,7 +75,7 @@ class SorteoForm(forms.Form):
         label='Genero',
         required=True,
         widget=forms.Select(
-            choices=product_genere,
+            choices=PRODUCT_GENERE,
             attrs={
                 'class': 'form-select',
                 'placeholder': '',
@@ -96,7 +96,7 @@ class SorteoForm(forms.Form):
         label='Provincia',
         required=True,
         widget=forms.Select(
-            choices=product_city,
+            choices=PRODUCT_CITY,
             attrs={
                 'class': 'form-select',
                 'placeholder': '',
